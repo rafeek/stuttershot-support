@@ -233,26 +233,25 @@
 </ul>
 
 <h2 id="clean-frames">Clean frames</h2>
-<p><strong>Clean</strong> on the control bar finds frames with a hand, a shadow or a knocked set in them, and removes rigs, wires and hands from frames. Like deflicker, it never changes your originals: a cleaned frame shows and exports a cleaned copy, and <strong>Restore Originals</strong> or undo brings the original back.</p>
-<p><strong>Finding problems</strong></p>
+<p><strong>Clean</strong> on the control bar removes rigs, wires, hands and shadows from frames, steadies a shaky camera, and can look through the shot for problems. Like deflicker, it never changes your originals: a cleaned frame shows and exports a cleaned copy, and <strong>Restore the Original</strong> or undo brings the original back.</p>
+<p>The panel's first part works on the frame on the stage; the next on the whole shot (or the frames selected in the strip).</p>
+<p><strong>Cleaning the frame you're looking at</strong></p>
 <ol>
-<li>Click <strong>Check Frames</strong>. Each frame is compared with the two either side. A frame where much more changed than usually changes between frames (your puppet moving) is flagged, and so is one where Vision sees a hand or a person.</li>
-<li>Flagged frames get an orange triangle in the strip and are listed in the panel. Click one to see the problem boxed on the stage.</li>
-<li>Choose <strong>Mark It</strong> (to remove it, below), <strong>Reshoot</strong>, <strong>Delete</strong> or <strong>Ignore</strong>.</li>
-</ol>
-<p>For a busy shot, set the <strong>Set Mask</strong> first: <strong>Suggest from the Shot</strong> finds what stayed the same, and <strong>Paint the Set</strong> adds to it or takes away. Then only changes to the set count.</p>
-<p><strong>Marking what to remove</strong> (shown in red on the stage)</p>
-<ul>
-<li><strong>Paint:</strong> turn on <strong>Paint on Frame …</strong> and brush over the rig or hand. Switch to <strong>Erase</strong> to take some back; the slider sets the brush size.</li>
-<li><strong>Rig colour:</strong> paint the rod or wire one bright colour that isn't anywhere else in the set. Click <strong>Pick…</strong>, click the rig on the stage, then <strong>Find the Rig in All Frames</strong> (or in the selected frames). <strong>Tolerance</strong> and <strong>Grow by</strong> widen what counts. It adds to anything already marked.</li>
-<li><strong>Carry it along:</strong> after painting one frame, press <strong>Next Frame</strong> (Return). The mask moves to the next frame, following the rig, and fits itself to it. Touch it up and press Return again.</li>
-</ul>
-<p><strong>Removing</strong></p>
-<ol>
-<li>Choose where clean pixels come from: <strong>Nearby Frames</strong> (the frames either side, where the rig has moved off the set behind it) or <strong>Clean Plate</strong>.</li>
-<li>Click <strong>Remove from Frame …</strong> or <strong>Remove from … Marked Frames</strong>. Cleaned frames show a crossed-out hand in the strip.</li>
+<li>Turn on <strong>Paint What to Remove</strong> and brush over the rig, hand or shadow; it shows in red. <strong>Erase</strong> takes some back, and the slider sets the brush size.</li>
+<li>Press <strong>Remove</strong> on the paint bar (or <strong>Remove What's Painted</strong> in the panel). The painted area is filled with the set from nearby frames, or a clean plate (under <strong>Removing</strong>). Cleaned frames show a crossed-out hand in the strip.</li>
 <li>Press and hold <strong>Hold to See the Original</strong> to compare.</li>
 </ol>
+<p>To carry on to the next frame, press <strong>Next Frame</strong> (Return) on the paint bar instead of Remove: the paint moves to the next frame, following the rig, and fits itself to it. Touch it up and press Return again, then <strong>Remove from … Painted Frames</strong> does them all.</p>
+<p><strong>Steadying a shaky camera.</strong> If the camera moved a little between frames (shooting handheld, or a bumped tripod), <strong>Steady Camera Shake</strong> measures how far each frame moved and moves it back. Playback and export show the steadied shot, zoomed in just enough to hide the edges; the frame on the stage on its own shows as it was shot. A frame that moved too far to be shake is left alone. <strong>Remove Steadying</strong> puts it back.</p>
+<p><strong>Rig colour.</strong> Paint the rod or wire one bright colour that isn't anywhere else in the set. Click <strong>Pick…</strong>, click the rig on the stage, then <strong>Paint the Rig in Every Frame</strong>. <strong>Tolerance</strong> and <strong>Grow by</strong> widen what counts. It adds to anything already painted.</p>
+<p><strong>Checking for problems</strong></p>
+<ol>
+<li>Click <strong>Check for Problems</strong>. Each frame is compared with the two either side. A frame where much more changed than usually changes between frames (your puppet moving) is flagged, and so is one where Vision sees a hand or a person.</li>
+<li>Flagged frames get an orange triangle in the strip and are listed in the panel. Click one to see the problem boxed on the stage.</li>
+<li>Choose <strong>Mark It</strong> (paints the problem, to remove it), <strong>Steady the Shot</strong> (when the set moved), <strong>Reshoot</strong>, <strong>Delete</strong> or <strong>Ignore</strong>.</li>
+</ol>
+<p>For a busy shot, set the <strong>Set Mask</strong> first: <strong>Suggest from the Shot</strong> finds what stayed the same, and <strong>Paint the Set</strong> adds to it or takes away. Then only changes to the set count.</p>
+<p><strong>Removing</strong> sets where clean pixels come from: <strong>Nearby Frames</strong> (the frames either side, where the rig has moved off the set behind it) or <strong>Clean Plate</strong>.</p>
 <p>A rig that never moves leaves the set behind it unseen in every frame. The panel says so, and a clean plate fixes it: take the puppet and rig out and click <strong>Shoot Clean Plate</strong>, which uses the same locked camera settings.</p>
 <p><strong>Clean plates at any time.</strong> A plate is used from where it's taken onward, so when the light changes or the set gets moved partway through a shot, shoot another one there. Earlier frames keep the plate they had. You can shoot a plate:</p>
 <ul>
@@ -264,8 +263,8 @@
 <li><strong>Start at …</strong> moves a plate to start at the frame on the stage;</li>
 <li>the bin removes a plate.</li>
 </ul>
-<p><strong>Make from …</strong> builds a plate from the frames themselves instead (the selected frames, or all of them) and uses it from the first of them. <strong>Use Frame … as the Plate</strong> turns a frame you shot with the set empty into the plate from there on, and takes it out of the movie.</p>
-<p>Where a rig joins the puppet, the mask overlaps the puppet a little, and that part gets filled with set too. Erase the mask there before removing.</p>
+<p><strong>Make from …</strong> builds a plate from the frames themselves instead (the selected frames, or all of them) and uses it from the first of them. <strong>Use This Frame as the Plate</strong> turns a frame you shot with the set empty into the plate from there on, and takes it out of the movie.</p>
+<p>Where a rig joins the puppet, the paint overlaps the puppet a little, and that part gets filled with set too. Erase it there before removing.</p>
 
 <h2 id="import">Import</h2>
 <p>From the <strong>Import</strong> button on the bar in Frames, or the File menu in the menu bar:</p>
