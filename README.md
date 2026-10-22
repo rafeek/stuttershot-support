@@ -17,7 +17,7 @@ Help menu opens the help page.
 ## Editing
 
 Edit the HTML directly and push; Pages redeploys within a minute or two. `help.html`
-is generated from `HELP.md` in the app's repository (`../StopMotion`): edit that, then
+is generated from `StutterShot/Help/HELP.md` in the app's repository (`../StopMotion`): edit that, then
 run `python3 gen_help.py` here.
 
 Every page opens with the same site header — the brand plus a menu bar linking all

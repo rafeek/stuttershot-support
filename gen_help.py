@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
-"""Emit help.html from the app's HELP.md.
+"""Emit help.html from the app's HELP.md (StutterShot/Help/HELP.md in the app's repo).
 
-HELP.md in the StopMotion repo is the one copy of the help; this turns it into
+HELP.md in the StopMotion repo is the one copy of the help. The app renders it
+itself (HelpPage.swift, which reads the same Markdown), and this turns it into
 the site's help page. Run from the repo root whenever HELP.md changes:
 
-    python3 gen_help.py [path/to/HELP.md]     # default ../StopMotion/HELP.md
+    python3 gen_help.py [path/to/HELP.md]     # default ../StopMotion/StutterShot/Help/HELP.md
 
 The site header (brand + menu bar) is defined here in NAV and stamped into the
-page; index.html and privacy.html carry a hand-pasted copy, so update those
+page. index.html and privacy.html carry a hand-pasted copy, so update those
 when NAV changes.
 
 Only the Markdown HELP.md uses is understood: # and ## headings, paragraphs,
@@ -20,7 +21,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-SOURCE = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT.parent / "StopMotion" / "HELP.md"
+SOURCE = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT.parent / "StopMotion" / "StutterShot" / "Help" / "HELP.md"
 OUT = ROOT / "help.html"
 
 NAV = [("index.html", "Support"), ("help.html", "Help"), ("privacy.html", "Privacy")]
